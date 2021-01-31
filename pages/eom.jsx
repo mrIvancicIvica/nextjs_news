@@ -6,7 +6,7 @@ export const eom = ({ employee }) => {
   return (
     <div className='page-container'>
       <div className={styles.main}>
-        <h1>Zaposlnik Mjeseca</h1>
+        <h1>Main Profile</h1>
         <div className={styles.employee}>
           <h3>{employee.first_name}</h3>
           <h6>{employee.position}</h6>
@@ -19,7 +19,7 @@ export const eom = ({ employee }) => {
 };
 
 export const getServerSideProps = async (pageContext) => {
-  const res = await axios("http://localhost:8000/employee");
+  const res = await axios("https://my-json-server.typicode.com/mrIvancicIvica/NextjsProject/employee");
   const employee = res.data;
 
   return {

@@ -31,7 +31,7 @@ export const Feed = ({ pageNumber, articles }) => {
           Previous Page
         </div>
 
-        <div>Page Number: {pageNumber}</div>
+        <div>Currently page: {pageNumber}</div>
         <div
           className={pageNumber ===  5 ? styles.disabled : styles.active}
           onClick={() => {
@@ -60,7 +60,7 @@ export const getServerSideProps = async (pageContext) => {
   }
 
   const res = await axios(
-    `https://newsapi.org/v2/top-headlines?country=us&pageSize=5&page=${pageNumber}`,
+    `https://newsapi.org/v2/top-headlines?country=cz&pageSize=5&page=${pageNumber}`,
     {
       headers: {
         Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
