@@ -1,0 +1,12 @@
+{
+    "employee": 
+      {
+        "first_name": "Ivica",
+        "last_name": "Ivancic",
+        "position": "Software developer",
+        "email": "ivica.ivancic007@gmail.com",
+        "image": "https://avatars.githubusercontent.com/u/18114877?s=400&u=66b62936c80add8baeaafca2fbef862fed476f64&v=4",
+        "description" : "Software enthusiast"
+      }
+    
+  }
