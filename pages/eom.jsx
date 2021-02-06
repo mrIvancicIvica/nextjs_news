@@ -19,7 +19,7 @@ export const eom = ({ employee }) => {
 };
 
 export const getServerSideProps = async (pageContext) => {
-  const res = await axios("https://my-json-server.typicode.com/mrIvancicIvica/NextjsProject/employee");
+  const res = await axios("https://my-json-server.typicode.com/mrIvancicIvica/nextjs_news/employee");
   const employee = res.data;
 
   return {
